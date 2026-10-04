@@ -69,8 +69,9 @@ CRUD/
 1. **Clonar el repositorio**
 
    ```bash
-   git clone https://github.com/nikinicole04/TareaCRUD.git
+     git clone https://github.com/nikinicole04/TareaCRUD.git
    cd TareaCRUD
+
    ```
 
 2. **Instalar dependencias**
@@ -115,49 +116,6 @@ CRUD/
 3. En `/products` verás la lista de productos; desde ahí puedes agregar, editar o eliminar.
 4. Cierra sesión con el botón **Cerrar sesión**.
 
-## Rutas
-
-### Autenticación
-
-| Método | Ruta | Descripción |
-|---|---|---|
-| GET | `/register` | Formulario de registro |
-| POST | `/register` | Crea un usuario |
-| GET | `/login` | Formulario de inicio de sesión |
-| POST | `/login` | Inicia sesión |
-| POST | `/logout` | Cierra sesión |
-
-### Productos (requieren sesión iniciada)
-
-| Método | Ruta | Descripción |
-|---|---|---|
-| GET | `/products` | Lista todos los productos |
-| GET | `/products/new` | Formulario para crear producto |
-| POST | `/products` | Guarda un producto nuevo |
-| GET | `/products/:id/edit` | Formulario para editar producto |
-| POST | `/products/:id/update` | Actualiza un producto |
-| POST | `/products/:id/delete` | Elimina un producto |
-
-## Base de datos
-
-**users**
-
-| Campo | Tipo |
-|---|---|
-| id | INTEGER (PK, autoincremental) |
-| name | TEXT |
-| username | TEXT (único) |
-| password | TEXT (hash bcrypt) |
-
-**products**
-
-| Campo | Tipo |
-|---|---|
-| id | INTEGER (PK, autoincremental) |
-| name | TEXT |
-| price | REAL |
-| stock | INTEGER |
-
 ## Scripts disponibles
 
 | Comando | Descripción |
@@ -167,5 +125,5 @@ CRUD/
 | `npm run users` | Muestra en consola los usuarios registrados |
 
 ## Autor
-
+Nicole Yépez
 [@nikinicole04](https://github.com/nikinicole04)
