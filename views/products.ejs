@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="top">
+      <h1>Productos</h1>
+      <div>
+        Usuario: <strong><%= username %></strong>
+        <form action="/logout" method="POST" style="display:inline">
+          <button type="submit" class="btn-gray">Cerrar sesión</button>
+        </form>
+      </div>
+    </div>
+
+    <p><a class="btn" href="/products/new">+ Nuevo producto</a></p>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Stock</th>
+        <th>Acciones</th>
+      </tr>
+      <% products.forEach(p => { %>
+        <tr>
+          <td><%= p.id %></td>
+          <td><%= p.name %></td>
+          <td>$<%= p.price %></td>
+          <td><%= p.stock %></td>
+          <td>
+            <a class="btn" href="/products/<%= p.id %>/edit">Editar</a>
+            <form action="/products/<%= p.id %>/delete" method="POST" style="display:inline"
+                  onsubmit="return confirm('¿Eliminar este producto?');">
+              <button type="submit" class="btn-danger">Eliminar</button>
+            </form>
+          </td>
+        </tr>
+      <% }) %>
+    </table>
+
+  </div>
+</body>
+</html>
