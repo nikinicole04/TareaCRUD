@@ -2,6 +2,9 @@
 
 Aplicación web hecha con **Node.js + Express** que permite registrar usuarios, iniciar sesión y gestionar un inventario de productos (crear, listar, editar y eliminar). Sigue el patrón **MVC** (Modelo – Vista – Controlador) y guarda los datos en una base **SQLite**.
 
+# Link del video:
+
+https://www.loom.com/share/12e69a6307d34683befdaa27eae0c429
 ---
 
 ## Características
