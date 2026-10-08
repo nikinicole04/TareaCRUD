@@ -5,7 +5,7 @@ Aplicación web hecha con **Node.js + Express** que permite registrar usuarios, 
 
 # Link del video:
 
-https://www.loom.com/share/d67f2d06b5104c4cb5f393f92da96e46
+https://www.loom.com/share/9245cb95b48d48c98b6e30fa45bf5d53
 ---
 
 ## Características
